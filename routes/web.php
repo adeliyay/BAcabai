@@ -14,12 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
 
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/dashboard', 'HomeController@dashboard')->name('dahboard');
 
+Route::get('/analysis', 'BAController@index')->name('homeBA');
 // START ROUTING FOR SUPPLY CHAIN MANAGEMENT
 Route::get('/scm', 'SCMController@index')->name('scm');
 // Route::get('/scm/{any}', 'SCMController@index')->where('any', '.*')->name('scm');
