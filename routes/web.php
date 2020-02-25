@@ -19,3 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/dashboard', 'HomeController@dashboard')->name('dahboard');
+
+// START ROUTING FOR SUPPLY CHAIN MANAGEMENT
+Route::get('/scm', 'SCMController@index')->name('scm');
+// Route::get('/scm/{any}', 'SCMController@index')->where('any', '.*')->name('scm');
+// END ROUTING FOR SUPPLY CHAIN MANAGEMENT

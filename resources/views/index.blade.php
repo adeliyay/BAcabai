@@ -1,9 +1,6 @@
 @extends('layouts.app2')
 @section('content')
 <div class="wrapper">
-
-
-
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
@@ -68,6 +65,18 @@
               </p>
             </a>
           </li>
+
+          <!-- START ROUTE TO SCM -->
+          <li class="nav-item">
+            <a href=" {{ route('scm') }}" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Supply Chain Management
+              </p>
+            </a>
+          </li>
+          <!-- END ROUTE TO SCM -->
+
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
