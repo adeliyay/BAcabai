@@ -20,7 +20,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/analysis', 'BAController@index')->name('homeBA');
+
 // START ROUTING FOR SUPPLY CHAIN MANAGEMENT
 Route::get('/scm', 'SCMController@index')->name('scm');
-// Route::get('/scm/{any}', 'SCMController@index')->where('any', '.*')->name('scm');
+Route::get('{path}','SCMController@index')->where( 'path', '([A-z\d-/_.]+)?' );
 // END ROUTING FOR SUPPLY CHAIN MANAGEMENT
