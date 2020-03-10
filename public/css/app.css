@@ -10884,3 +10884,7 @@ a.text-dark:focus {
   }
 }
 
+.router-link-active {
+  background-color: #3f51b5;
+}
+
